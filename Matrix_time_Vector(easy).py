@@ -1,6 +1,6 @@
 def matrix_dot_vector(a:list[list[int|float]],b:list[int|float])-> list[int|float]:
 	c=[]
-	if len(a[0]) < len(b):
+	if len(a[0]) != len(b):
 		return -1
 	for i in range (len(a)):
 		k=0
